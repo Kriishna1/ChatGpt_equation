@@ -1,0 +1,80 @@
+[data-message-id] {
+    overflow-x: visible;
+}
+
+.math.math-inline {
+    overflow-x: visible;
+}
+
+.katex {
+    overflow-x: visible;
+    padding: 3px;
+    border: 1px solid #0000;
+    margin: -4px;
+    display: inline-block;
+}
+
+body:not(:has(#contextMenu[desktop])) .katex:hover {
+    border: 1px solid #fff;
+    filter: contrast(1.5);
+    background: #0003;
+    cursor: pointer;
+}
+
+html[data-darkreader-scheme="dark"] body:not(:has(#contextMenu[desktop])) .katex:hover {
+    filter: brightness(100);
+}
+
+#contextMenu .copy_eq_btn,
+.pt-0\.5 .copy_eq_btn {
+    fill: #fff;
+}
+
+html.light:not(html[data-darkreader-scheme="dark"]) #contextMenu {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+html.light:not(html[data-darkreader-scheme="dark"]) #contextMenu .copy_eq_btn,
+html.light:not(html[data-darkreader-scheme="dark"]) .pt-0\.5 > .copy_eq_btn {
+    fill: #000;
+}
+
+html[data-darkreader-scheme="dark"] body:not(:has(#contextMenu[desktop])) .katex:hover {
+    filter: brightness(100);
+}
+
+.pt-0\.5 .copy_eq_btn {
+    display: none;
+}
+
+.pt-0\.5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.mx-auto:has(.katex) .pt-0\.5 > .copy_eq_btn {
+    display: block;
+    margin: auto 0;
+    cursor: pointer;
+    filter: invert(0.6);
+}
+
+.mx-auto:has(.katex) .pt-0\.5 > .copy_eq_btn:hover {
+    filter: invert(0);
+}
+
+html[data-darkreader-scheme="dark"] #paste_eq_pop {
+    --darkreader-bg--main-surface-primary:#2f2f2f!important;
+}
+
+#path_eq_link {
+    color:aquamarine;
+}
+
+html.light:not(html[data-darkreader-scheme="dark"]) #path_eq_link {
+    color:darkorchid!important;
+}

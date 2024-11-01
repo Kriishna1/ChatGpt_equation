@@ -1,0 +1,30 @@
+.mwe-math-element {
+    overflow: hidden;
+}
+
+.mwe-math-element>img {
+    border: 1px solid #0000;
+    padding: 3px;
+    margin: -4px;
+}
+
+.mwe-math-fallback-image-display {
+    margin: 0px!important;
+}
+
+body:not(:has(#contextMenu[desktop])) .mwe-math-element>img:hover {
+    border: 1px solid #fff;
+    filter: contrast(1.5);
+    background: #0003;
+    cursor: pointer;
+}
+
+html:not(html[data-darkreader-scheme="dark"]) #contextMenu {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+html[data-darkreader-scheme="dark"] #contextMenu .copy_eq_btn {
+    fill: #fff;
+}
